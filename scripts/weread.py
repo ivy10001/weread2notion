@@ -136,7 +136,7 @@ def insert_to_notion(bookName, bookId, cover, sort, author, isbn, rating, catego
         "Author": get_rich_text(author),
         "Sort": get_number(sort),
         "Rating": get_number(rating),
-        # "Cover": get_file(cover),
+        "Cover": get_file(cover),
     }
     if categories != None:
         properties["Categories"] = get_multi_select(categories)
